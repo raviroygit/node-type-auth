@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS Activation Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .header {
+            background-color: #3498db;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: left;
+            color: #333333;
+        }
+
+        .activation-code {
+            font-size: 24px;
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Account Activation</h2>
+        </div>
+        <div class="content">
+            <p>Hello <%=user.name %>,</p>
+            <p>Your activation code is:</p>
+            <p class="activation-code"><%= activationCode %></p>
+            <p>Please use this code to activate your account.</p>
+        </div>
+        <div class="footer">
+            <p>If you didn't request this, please ignore this email.</p>
+        </div>
+    </div>
+</body>
+
+</html>
